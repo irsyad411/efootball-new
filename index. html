@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball - Title Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Montserrat untuk tampilan modern & sporty -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Dynamic Glow & Pattern -->
+    <div class="bg-overlay"></div>
+    <div class="bg-gradient"></div>
+
+    <div class="container">
+        <!-- Header Top Right -->
+        <header class="top-bar">
+            <div class="server-status">
+                <span class="dot"></span> SERVER ONLINE
+            </div>
+            <div class="version">v3.4.0</div>
+        </header>
+
+        <!-- Main Center Content -->
+        <main class="main-content">
+            <!-- eFootball Logo -->
+            <div class="logo-container">
+                <h1 class="logo-efootball">
+                    <span class="e-letter">e</span>Football<span class="trademark">™</span>
+                </h1>
+            </div>
+
+            <!-- Start Prompt -->
+            <div class="start-prompt" id="startPrompt">
+                PRESS ANY BUTTON TO START
+            </div>
+        </main>
+
+        <!-- Footer Bottom Information -->
+        <footer class="footer-bar">
+            <div class="copyright">©Konami Digital Entertainment</div>
+            <div class="legal-links">
+                <span>Terms of Service</span> | <span>Privacy Policy</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Overlay Transisi Masuk Game -->
+    <div class="screen-flash" id="screenFlash"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
