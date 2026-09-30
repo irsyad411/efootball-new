@@ -1,0 +1,87 @@
+<!-- Container Utama Halaman 2 (Main Menu eFootball) -->
+<div style="position: relative; width: 100vw; height: 100vh; overflow: hidden; background: linear-gradient(135deg, #02000a 0%, #0d0028 100%); color: #ffffff; font-family: 'Montserrat', 'Arial Black', sans-serif; user-select: none; padding: 40px 60px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; margin: 0;">
+
+  <!-- Background Glow Cyan / Magenta Overlay -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.18), transparent 45%), radial-gradient(circle at 10% 80%, rgba(230, 0, 126, 0.15), transparent 40%); pointer-events: none; z-index: 1;"></div>
+
+  <!-- Background Pattern Garis Abstrak -->
+  <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255, 255, 255, 0.01) 30px, rgba(255, 255, 255, 0.01) 60px); transform: rotate(-10deg); pointer-events: none; z-index: 1;"></div>
+
+  <!-- Header / Top Bar (Logo + Status In-Game Resources) -->
+  <div style="position: relative; z-index: 5; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(255, 255, 255, 0.1); padding-bottom: 20px;">
+    
+    <!-- Logo Brand eFootball & Mode Indicator -->
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <div style="display: flex; align-items: baseline; font-style: italic; text-transform: uppercase;">
+        <div style="font-size: 36px; font-weight: 900; color: #e6007e; text-shadow: 0 0 15px rgba(230, 0, 126, 0.6);">e</div>
+        <div style="font-size: 28px; font-weight: 900; color: #ffffff; letter-spacing: -1px;">Football</div>
+      </div>
+      <div style="font-size: 13px; font-weight: 800; letter-spacing: 2px; color: #00d4ff; background: rgba(0, 212, 255, 0.12); padding: 5px 14px; border-radius: 12px; border: 1px solid rgba(0, 212, 255, 0.4); text-transform: uppercase;">
+        TOP MENU
+      </div>
+    </div>
+
+    <!-- Currency Bar (GP & eFootball Coins) -->
+    <div style="display: flex; gap: 20px; font-size: 13px; font-weight: 800;">
+      <div style="background: rgba(0, 0, 0, 0.6); padding: 8px 20px; border-radius: 20px; border: 1px solid rgba(0, 255, 204, 0.4); display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+        <div style="color: rgba(255, 255, 255, 0.5);">GP:</div>
+        <div style="color: #00ffcc; letter-spacing: 1px;">1,500,000</div>
+      </div>
+      <div style="background: rgba(0, 0, 0, 0.6); padding: 8px 20px; border-radius: 20px; border: 1px solid rgba(255, 204, 0, 0.4); display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+        <div style="color: rgba(255, 255, 255, 0.5);">COINS:</div>
+        <div style="color: #ffcc00; letter-spacing: 1px;">1,000</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Area Utama Menu (Grid 3 Card Interaktif) -->
+  <div style="position: relative; z-index: 5; display: flex; gap: 30px; justify-content: center; align-items: center; width: 100%; height: 65%;">
+
+    <!-- Card 1: MATCH -->
+    <div style="flex: 1; max-width: 320px; height: 380px; background: linear-gradient(180deg, rgba(230, 0, 126, 0.35) 0%, rgba(10, 0, 30, 0.95) 100%); border: 2px solid #e6007e; border-radius: 20px; padding: 30px; display: flex; flex-direction: column; justify-content: flex-end; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(230, 0, 126, 0.2);" 
+         onmouseover="this.style.transform='translateY(-12px) scale(1.02)'; this.style.boxShadow='0 20px 45px rgba(230, 0, 126, 0.6)';" 
+         onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 30px rgba(230, 0, 126, 0.2)';">
+      <div style="font-size: 12px; font-weight: 800; color: #e6007e; letter-spacing: 2px; margin-bottom: 5px;">GAME MODE</div>
+      <div style="font-size: 38px; font-weight: 900; font-style: italic; color: #ffffff; letter-spacing: -1px;">MATCH</div>
+      <div style="font-size: 12px; color: rgba(255, 255, 255, 0.7); margin-top: 12px; line-height: 1.5;">Mainkan pertandingan Authentic Match, User Events, atau eFootball League.</div>
+    </div>
+
+    <!-- Card 2: MY TEAM -->
+    <div style="flex: 1; max-width: 320px; height: 380px; background: linear-gradient(180deg, rgba(0, 212, 255, 0.35) 0%, rgba(10, 0, 30, 0.95) 100%); border: 2px solid #00d4ff; border-radius: 20px; padding: 30px; display: flex; flex-direction: column; justify-content: flex-end; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);" 
+         onmouseover="this.style.transform='translateY(-12px) scale(1.02)'; this.style.boxShadow='0 20px 45px rgba(0, 212, 255, 0.6)';" 
+         onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 30px rgba(0, 212, 255, 0.2)';">
+      <div style="font-size: 12px; font-weight: 800; color: #00d4ff; letter-spacing: 2px; margin-bottom: 5px;">MANAGEMENT</div>
+      <div style="font-size: 38px; font-weight: 900; font-style: italic; color: #ffffff; letter-spacing: -1px;">MY TEAM</div>
+      <div style="font-size: 12px; color: rgba(255, 255, 255, 0.7); margin-top: 12px; line-height: 1.5;">Atur taktik formasi, tingkatkan level pemain, dan racik skuad impianmu.</div>
+    </div>
+
+    <!-- Card 3: CONTRACT -->
+    <div style="flex: 1; max-width: 320px; height: 380px; background: linear-gradient(180deg, rgba(0, 255, 204, 0.35) 0%, rgba(10, 0, 30, 0.95) 100%); border: 2px solid #00ffcc; border-radius: 20px; padding: 30px; display: flex; flex-direction: column; justify-content: flex-end; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(0, 255, 204, 0.2);" 
+         onmouseover="this.style.transform='translateY(-12px) scale(1.02)'; this.style.boxShadow='0 20px 45px rgba(0, 255, 204, 0.6)';" 
+         onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 30px rgba(0, 255, 204, 0.2)';">
+      <div style="font-size: 12px; font-weight: 800; color: #00ffcc; letter-spacing: 2px; margin-bottom: 5px;">TRANSFER</div>
+      <div style="font-size: 38px; font-weight: 900; font-style: italic; color: #ffffff; letter-spacing: -1px;">CONTRACT</div>
+      <div style="font-size: 12px; color: rgba(255, 255, 255, 0.7); margin-top: 12px; line-height: 1.5;">Rekrut pemain bintang standar, manajer top, atau agen spesial.</div>
+    </div>
+
+  </div>
+
+  <!-- Footer / Bottom Navigation Bar -->
+  <div style="position: relative; z-index: 5; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 15px;">
+    
+    <!-- Tombol Kembali -->
+    <div style="font-size: 12px; font-weight: 800; letter-spacing: 1.5px; color: #ffffff; background: rgba(255, 255, 255, 0.08); padding: 12px 28px; border-radius: 25px; border: 1px solid rgba(255, 255, 255, 0.25); cursor: pointer; transition: all 0.2s;"
+         onmouseover="this.style.background='rgba(255, 255, 255, 0.2)'; this.style.borderColor='#ffffff';"
+         onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'; this.style.borderColor='rgba(255, 255, 255, 0.25)';">
+      &lt; BACK TO TITLE SCREEN
+    </div>
+
+    <!-- Quick Status Info -->
+    <div style="font-size: 11px; font-weight: 800; color: rgba(255, 255, 255, 0.4); letter-spacing: 1.5px;">
+      eFOOTBALL™ 2026 OFFICIAL MENU
+    </div>
+
+  </div>
+
+</div>
